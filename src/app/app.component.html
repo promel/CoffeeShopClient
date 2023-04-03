@@ -1,19 +1,2 @@
-<button (click)="initAddPurchase()">Add Purchase</button>
-<table>
-  <thead>
-    <th>Date</th>
-    <th>Description</th>
-    <th>Price</th>
-  </thead>
-  <tbody>
-    <tr *ngFor="let purchase of purchases">
-      <td>{{purchase.date | date:'dd/MM/yyyy' }}</td>
-      <td>{{purchase.description}}</td>
-      <td>{{purchase.price}}</td>
-      <td>
-        <button (click)="editPurchase(purchase)">Edit</button>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<app-edit-purchase [purchase]="purchaseToEdit" (purchases)="updatedPurchaseList($event)"></app-edit-purchase>
+<!-- <app-coffee></app-coffee> -->
+<app-purchase></app-purchase>

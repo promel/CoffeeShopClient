@@ -1,0 +1,19 @@
+<table class="table table-striped">
+    <thead>
+      <th>Date</th>
+      <th>Description</th>
+      <th>Price</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let purchase of purchases">
+        <td>{{purchase.date | date: 'dd/MM/yyyy'}}</td>
+        <td>{{purchase.description}}</td>
+        <td>{{purchase.price}}</td>
+      </tr>
+      <tr *ngIf="points">
+          <td></td>
+          <td></td>
+          <td>Total points: {{points}}</td>
+      </tr>
+    </tbody>
+</table>

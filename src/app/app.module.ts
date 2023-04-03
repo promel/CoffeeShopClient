@@ -4,25 +4,30 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { EditPurchaseComponent } from './components/edit-purchase/edit-purchase.component';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { CoffeeComponent } from './components/coffee/coffee.component';
+import { PurchaseComponent } from './components/purchase/purchase.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EditPurchaseComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    CoffeeComponent,
+    PurchaseComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+
+export class AppModule {
+  title = 'Coffee Shop'
+}

@@ -1,6 +1,7 @@
 export class Purchase {
-    id?: number = 0;
+    id?: number;
     date?: Date;
     description?: string;
     price?: number;
+    userId?: number;
 }
